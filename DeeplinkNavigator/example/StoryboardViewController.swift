@@ -28,6 +28,6 @@ extension StoryboardViewController: StoryboardLifeCycleable {
     }
     
     func navigationLoad(parameter: [String : Any]?, needRequest: Bool) {
-        print("xxxxxxxxxx:\(parameter) xxxxxneedRequest:\(needRequest)")
+//        print("xxxxxxxxxx:\(parameter) xxxxxneedRequest:\(needRequest)")
     }
 }

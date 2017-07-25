@@ -14,10 +14,16 @@ final class InitViewController: UIViewController, Titlable {
         title = identifier
         view.backgroundColor = UIColor.blue
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        
+    }
 }
 
 extension InitViewController: InitLifeCycleable {
     func navigationLoad(parameter: [String : Any]?, needRequest: Bool) {
-        print("xxxxxxxxxx:\(parameter) xxxxxneedRequest:\(needRequest)")
+//        print("xxxxxxxxxx:\(parameter) xxxxxneedRequest:\(needRequest)")
     }
 }

@@ -48,7 +48,8 @@ class MainViewController: UITableViewController {
             let cell = tableView.cellForRow(at: indexPath)
             Navigator.present("/test", from: cell, animated: true)
         }
-        Navigator.push("navigator://\(items[indexPath.row])", context: ["fromViewController": self], animated: true)
+        self.present(InitViewController(), animated: false, completion: nil)
+//        Navigator.present("navigator://\(items[indexPath.row])", context: ["fromViewController": self], wrap: false, animated: true)
     }
 
 }

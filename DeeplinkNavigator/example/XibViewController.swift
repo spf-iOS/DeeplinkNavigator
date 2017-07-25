@@ -17,6 +17,6 @@ final class XibViewController: UIViewController, Titlable {
 
 extension XibViewController: XibLifeCycleable {
     func navigationLoad(parameter: [String : Any]?, needRequest: Bool) {
-        print("xxxxxxxxxx:\(parameter) xxxxxneedRequest:\(needRequest)")
+//        print("xxxxxxxxxx:\(parameter) xxxxxneedRequest:\(needRequest)")
     }
 }

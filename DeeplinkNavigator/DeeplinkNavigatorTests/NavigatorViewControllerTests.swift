@@ -10,15 +10,16 @@ import Quick
 import Nimble
 @testable import example
 
+//MARK: 测试Navigator的内部实现
+
 //MARK: - 在方法名前加'x',可以屏蔽此方法的测试  在方法名前加'f',可以只测试这些加'f'的测试
 
-class NavigatorUT: QuickSpec {
+class NavigatorViewControllerTests: QuickSpec {
         
     override func spec(){
         super.spec()
         
-        NavigatorUTObj.register()
-        
+        NavigatorViewControllerObj.register()
         
         let nav = UINavigationController.init(rootViewController: UIViewController())
         

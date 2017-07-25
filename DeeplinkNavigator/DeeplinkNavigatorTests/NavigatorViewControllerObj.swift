@@ -9,20 +9,16 @@
 import UIKit
 @testable import example
 
-class NavigatorUTObj {
-    
-    static func isXibVC(vc:UIViewController?) -> Bool{
-       return vc is XibViewController
-    }
+class NavigatorViewControllerObj {
     
     static func register(){
         Navigator.scheme = "navigator"
         Navigator.map("InitViewController", InitViewController.self, context: "I am a InitViewController")
         Navigator.map("XibViewController", XibViewController.self, context: "I am a XibViewController")
         Navigator.map("StoryboardViewController", StoryboardViewController.self, context: "I am a StoryboardViewController")
-        Navigator.map("navigator://<path>") {(url, context, from, values) -> Bool in
-            return Navigator.push(url) != nil
-        }
+//        Navigator.map("navigator://<path>") {(url, context, from, values) -> Bool in
+//            return Navigator.push(url) != nil
+//        }
     }
 }
 
