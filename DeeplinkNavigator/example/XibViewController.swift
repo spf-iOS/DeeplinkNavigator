@@ -15,9 +15,8 @@ final class XibViewController: UIViewController, Titlable {
     }
 }
 
-extension XibViewController: XibNavigable {
-    static func viewControllerFromXib(navigation: DeeplinkNavigation) -> UIViewController? {
-        let vc = XibViewController(nibName: String(describing: self), bundle: nil)
-        return vc
+extension XibViewController: XibLifeCycleable {
+    func navigationLoad(parameter: [String : Any]?, needRequest: Bool) {
+        print("xxxxxxxxxx:\(parameter) xxxxxneedRequest:\(needRequest)")
     }
 }

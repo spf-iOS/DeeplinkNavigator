@@ -45,6 +45,8 @@
 		E449FEE01F25C56F004CCA2C /* LifeCycleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449FEDF1F25C56F004CCA2C /* LifeCycleable.swift */; };
 		E449FEE31F25C596004CCA2C /* Navigationparamterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449FEE11F25C596004CCA2C /* Navigationparamterable.swift */; };
 		E449FEE41F25C596004CCA2C /* UIViewController+viewDidLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449FEE21F25C596004CCA2C /* UIViewController+viewDidLoad.swift */; };
+		E449FEE61F25C7A6004CCA2C /* NavigatorUT.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449FEE51F25C7A6004CCA2C /* NavigatorUT.swift */; };
+		E449FEE81F25CCB3004CCA2C /* NavigatorUTObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449FEE71F25CCB3004CCA2C /* NavigatorUTObj.swift */; };
 		E8317BC473B92584A0C9E15C /* Pods_DeeplinkNavigator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD872989C5D24681D9DED755 /* Pods_DeeplinkNavigator.framework */; };
 /* End PBXBuildFile section */
 
@@ -120,6 +122,8 @@
 		E449FEDF1F25C56F004CCA2C /* LifeCycleable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifeCycleable.swift; sourceTree = "<group>"; };
 		E449FEE11F25C596004CCA2C /* Navigationparamterable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigationparamterable.swift; sourceTree = "<group>"; };
 		E449FEE21F25C596004CCA2C /* UIViewController+viewDidLoad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+viewDidLoad.swift"; sourceTree = "<group>"; };
+		E449FEE51F25C7A6004CCA2C /* NavigatorUT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigatorUT.swift; sourceTree = "<group>"; };
+		E449FEE71F25CCB3004CCA2C /* NavigatorUTObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigatorUTObj.swift; sourceTree = "<group>"; };
 		EF113720C15360ABE6C4EABC /* Pods-DeeplinkNavigator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeeplinkNavigator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeeplinkNavigator/Pods-DeeplinkNavigator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -225,6 +229,8 @@
 			isa = PBXGroup;
 			children = (
 				02E0B7841E77B84100A6845D /* DeeplinkNavigatorTests.swift */,
+				E449FEE51F25C7A6004CCA2C /* NavigatorUT.swift */,
+				E449FEE71F25CCB3004CCA2C /* NavigatorUTObj.swift */,
 				02E0B7861E77B84100A6845D /* Info.plist */,
 			);
 			path = DeeplinkNavigatorTests;
@@ -587,7 +593,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E449FEE61F25C7A6004CCA2C /* NavigatorUT.swift in Sources */,
 				02E0B7851E77B84100A6845D /* DeeplinkNavigatorTests.swift in Sources */,
+				E449FEE81F25CCB3004CCA2C /* NavigatorUTObj.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -812,7 +820,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hanguang.app.DeeplinkNavigatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeeplinkNavigator.app/DeeplinkNavigator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/example.app/example";
 			};
 			name = Debug;
 		};
@@ -827,7 +835,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hanguang.app.DeeplinkNavigatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeeplinkNavigator.app/DeeplinkNavigator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/example.app/example";
 			};
 			name = Release;
 		};

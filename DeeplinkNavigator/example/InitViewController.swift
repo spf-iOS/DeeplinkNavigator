@@ -16,9 +16,8 @@ final class InitViewController: UIViewController, Titlable {
     }
 }
 
-extension InitViewController: InitNavigable {
-    convenience init?(navigation: DeeplinkNavigation) {
-        print(navigation)
-        self.init()
+extension InitViewController: InitLifeCycleable {
+    func navigationLoad(parameter: [String : Any]?, needRequest: Bool) {
+        print("xxxxxxxxxx:\(parameter) xxxxxneedRequest:\(needRequest)")
     }
 }
