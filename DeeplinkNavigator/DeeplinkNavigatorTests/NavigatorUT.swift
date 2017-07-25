@@ -36,8 +36,11 @@ class NavigatorUT: QuickSpec {
                     viewController = Navigator.push(url, context: nil, from: nav, animated: false)
                 }
                 it("初始化成功", closure: {
-                    let boo = viewController is InitLifeCycleable && viewController.classForCoder == urlType
-                    expect(boo).to(equal(true))
+                    expect(viewController).to(beAKindOf(urlType))
+                })
+                
+                it("遵从InitProtocol", closure: {
+                    expect(viewController).to(beAKindOf(InitLifeCycleable.self))
                 })
             })
             
@@ -49,8 +52,11 @@ class NavigatorUT: QuickSpec {
                     viewController = Navigator.push(url, context: nil, from: nav, animated: false)
                 }
                 it("初始化成功", closure: {
-                    let boo = viewController is XibLifeCycleable && viewController.classForCoder == urlType
-                    expect(boo).to(equal(true))
+                    expect(viewController).to(beAKindOf(urlType))
+                })
+                
+                it("遵从XibProtocol", closure: {
+                    expect(viewController).to(beAKindOf(XibLifeCycleable.self))
                 })
             })
             
@@ -62,8 +68,10 @@ class NavigatorUT: QuickSpec {
                     viewController = Navigator.push(url, context: nil, from: nav, animated: false)
                 }
                 it("初始化成功", closure: {
-                    let boo = viewController is StoryboardLifeCycleable && viewController.classForCoder == urlType
-                    expect(boo).to(equal(true))
+                    expect(viewController).to(beAKindOf(urlType))
+                })
+                it("遵从StoryboardProtocol", closure: {
+                    expect(viewController).to(beAKindOf(StoryboardLifeCycleable.self))
                 })
             })
             
@@ -155,13 +163,15 @@ class NavigatorUT: QuickSpec {
                     viewController = Navigator.push(url, context: nil, from: nav, animated: false)
                 }
                 
-                beforeEach({ () -> Void in
-                    // 方法2: 触发.viewDidLoad(), .viewWillAppear(), 和 .viewDidAppear() 事件
-                    viewController.beginAppearanceTransition(true, animated: false)
-                    viewController.endAppearanceTransition()
-                })
+//                beforeEach({ () -> Void in
+//                    // 方法2: 触发.viewDidLoad(), .viewWillAppear(), 和 .viewDidAppear() 事件
+//                    viewController.beginAppearanceTransition(true, animated: false)
+//                    viewController.endAppearanceTransition()
+//                })
+                
                 it("跳转成功", closure: { () -> () in
                     let lastVC = nav.viewControllers.last
+//                    expect(lastVC == viewController).toEventually(equal(true), timeout: 3)
                     expect(lastVC == viewController).to(equal(true))
                 })
             })
