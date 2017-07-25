@@ -172,9 +172,10 @@ class NavigatorUT: QuickSpec {
                 it("跳转成功", closure: { () -> () in
                     let lastVC = nav.viewControllers.last
 //                    expect(lastVC == viewController).toEventually(equal(true), timeout: 3)
-                    expect(lastVC == viewController).to(equal(true))
+                    expect(lastVC) == viewController
                 })
             })
         }
+        
     }
 }
