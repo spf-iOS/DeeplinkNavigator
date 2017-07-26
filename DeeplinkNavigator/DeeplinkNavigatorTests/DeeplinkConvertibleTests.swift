@@ -52,7 +52,15 @@ class DeeplinkConvertibleTests: QuickSpec {
                 })
 
             })
-            
+        }
+        
+        describe("VCType验证") {
+            context("VCType验证", closure: {
+               it("InitViewController对应的URL", closure: {
+                    let url = Navigator.url(InitViewController.self)
+                    expect(url) == "navigator:/InitViewController"
+               })
+            })
         }
     }
 }

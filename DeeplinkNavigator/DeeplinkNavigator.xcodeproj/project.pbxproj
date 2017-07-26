@@ -49,6 +49,7 @@
 		E449FEE81F25CCB3004CCA2C /* NavigatorViewControllerObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449FEE71F25CCB3004CCA2C /* NavigatorViewControllerObj.swift */; };
 		E449FEF61F273AA5004CCA2C /* NavigatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449FEF51F273AA5004CCA2C /* NavigatorTests.swift */; };
 		E449FEF81F27514E004CCA2C /* DeeplinkConvertibleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449FEF71F27514E004CCA2C /* DeeplinkConvertibleTests.swift */; };
+		E449FF0E1F28792F004CCA2C /* DeeplinkNavigatorWithTypeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449FF0D1F28792F004CCA2C /* DeeplinkNavigatorWithTypeExtension.swift */; };
 		E8317BC473B92584A0C9E15C /* Pods_DeeplinkNavigator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD872989C5D24681D9DED755 /* Pods_DeeplinkNavigator.framework */; };
 /* End PBXBuildFile section */
 
@@ -128,6 +129,7 @@
 		E449FEE71F25CCB3004CCA2C /* NavigatorViewControllerObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigatorViewControllerObj.swift; sourceTree = "<group>"; };
 		E449FEF51F273AA5004CCA2C /* NavigatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigatorTests.swift; sourceTree = "<group>"; };
 		E449FEF71F27514E004CCA2C /* DeeplinkConvertibleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeeplinkConvertibleTests.swift; sourceTree = "<group>"; };
+		E449FF0D1F28792F004CCA2C /* DeeplinkNavigatorWithTypeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeeplinkNavigatorWithTypeExtension.swift; sourceTree = "<group>"; };
 		EF113720C15360ABE6C4EABC /* Pods-DeeplinkNavigator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeeplinkNavigator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeeplinkNavigator/Pods-DeeplinkNavigator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -269,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				E449FED31F25C47A004CCA2C /* DeeplinkNavigatorExtension.swift */,
+				E449FF0D1F28792F004CCA2C /* DeeplinkNavigatorWithTypeExtension.swift */,
 				E449FEDF1F25C56F004CCA2C /* LifeCycleable.swift */,
 				E449FEE11F25C596004CCA2C /* Navigationparamterable.swift */,
 				E449FEE21F25C596004CCA2C /* UIViewController+viewDidLoad.swift */,
@@ -585,6 +588,7 @@
 				028BD6D71E8A934C000F43E7 /* DeeplinkNavigator.swift in Sources */,
 				028BD6DB1E8A934C000F43E7 /* UIViewController+TopViewController.swift in Sources */,
 				029E45F61F17783E00B95148 /* Titlable.swift in Sources */,
+				E449FF0E1F28792F004CCA2C /* DeeplinkNavigatorWithTypeExtension.swift in Sources */,
 				029E45F51F17783E00B95148 /* TestViewController.swift in Sources */,
 				029E45F31F17783E00B95148 /* PushOrPopViewController.swift in Sources */,
 				028BD6D81E8A934C000F43E7 /* DeeplinkConvertible.swift in Sources */,
